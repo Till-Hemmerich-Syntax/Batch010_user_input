@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Batch010_user_input</string>
+    <string name="greeting_no_dog">Hallo %1$s</string>
+    <string name="greeting_with_dog">Hallo %1$s und Hund</string>
+</resources>
