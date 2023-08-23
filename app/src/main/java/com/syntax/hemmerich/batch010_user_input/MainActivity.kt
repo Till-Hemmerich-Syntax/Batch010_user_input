@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.RadioGroup
 import android.widget.Switch
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -21,9 +22,18 @@ class MainActivity : AppCompatActivity() {
         var cbDog = findViewById<CheckBox>(R.id.cb_dog)
         var swDog = findViewById<Switch>(R.id.sw_dog)
         var clRoot = findViewById<ConstraintLayout>(R.id.cl_root)
+        var rgTest = findViewById<RadioGroup>(R.id.rg_test)
 
         clRoot.setOnClickListener {
             println("Wooop Wooop")
+
+            var selectedOption = rgTest.checkedRadioButtonId
+
+            when(selectedOption){
+                R.id.rb_awnser1 -> println("Awnser1")
+                R.id.rb_awnser2 -> println("Awnser2")
+            }
+
         }
         btnClickMe.setOnClickListener {
             var name = etName.text
